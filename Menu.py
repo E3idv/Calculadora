@@ -1,3 +1,13 @@
+def multiplicacion():
+    total=1
+    print("Ponga 0 para cuando quiera terminar")
+    while True:
+        numero=float(input("Numero:"))
+        total*=numero
+        if numero=="":
+            break
+    print("El total es:",total)
+    
 def potencia():
     print("Numero a elevar:")
     a=float(input())
@@ -21,6 +31,12 @@ def Numeros_primos_en_un_rango_definido():
       else:
           print( str(contador2)+ " no es primo")
       contador2=contador2 + 1
+    
+ def division ():
+    x = float (input("Escribe el numero que quieres dividir: "))
+    y = float (input("Escribe el numero por el que quieres dividir "))
+    print ("El resultado es: ")
+    print (x/y)
     
  def suma():
     total=0.0
