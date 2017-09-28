@@ -1,3 +1,19 @@
+def potencia():
+    print("Numero a elevar:")
+    a=float(input())
+    print("Potencia:")
+    b=float(input())
+    resultado=a**b
+    print(resultado)
+
+def raiz():
+    print("Numero a sacar raiz")
+    a=float(input())
+    print("Raiz")
+    b=float(input())
+    resultado=a**(1/b)
+    print(resultado)
+    
 def Menu():
     ans = True
     while ans:
