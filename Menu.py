@@ -5,6 +5,33 @@ def potencia():
     b=float(input())
     resultado=a**b
     print(resultado)
+    
+def Numeros_primos_en_un_rango_definido():
+    x=int(input("Introduzca hasta que numero quiere saber si los numeros son primos: "))
+    contador2=1
+    while(contador2<x+1):
+      esprimo=True
+      contador=2
+      while (contador<contador2):
+          if (contador2%contador==0):
+              esprimo=False
+          contador=contador+1
+      if(esprimo):
+          print (str(contador2)+" es primo")
+      else:
+          print( str(contador2)+ " no es primo")
+      contador2=contador2 + 1
+    
+ def suma():
+    total=0.0
+    print("Ponga 0 para cuando quiera terminar")
+    while True:
+        numero=float(input("Numero:"))
+        total+=numero
+        if numero==0:
+            break
+    print("El total es:",total)
+    
 
 def raiz():
     print("Numero a sacar raiz")
@@ -21,7 +48,7 @@ def Menu():
         1.-Suma
         2.-Multiplicaccion
         3.-Division
-        4.-Modullo
+        4.-Modulo
         5.-Potencia
         6.-Raiz
         7.-Binario-Hexadecimal
@@ -45,7 +72,7 @@ def Menu():
         elif ans==3:
            division()
         elif ans==4:
-            Modullo()
+            Modulo()
         elif ans==5:
             Potencia()
         elif ans==6:
@@ -63,9 +90,9 @@ def Menu():
         elif ans==12:
             Binario-Decimal()
         elif ans==13:
-            Numeros primos en un rango definido()
+            Numeros_primos_en_un_rango_definido()
         elif ans==14:
-            Determinar si un numero es primo()
+            Determinar_si_un_numero_es_primo()
         elif ans==15:
             IMC()
         elif ans==16:
