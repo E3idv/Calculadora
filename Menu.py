@@ -22,6 +22,42 @@ def Menu():
 
         ans=int(input("Que te gustaria hacer"))
        
+        if ans==1:
+           suma()
+        elif ans==2:
+            multiplicacion()
+        elif ans==3:
+           division()
+        elif ans==4:
+            Modullo()
+        elif ans==5:
+            Potencia()
+        elif ans==6:
+            Raiz()
+        elif ans==7:
+            Binario-Hexadecimal()
+        elif ans==8:
+            Hexadecimal-Binario()
+        elif ans==9:
+            Decimal-Hexadecimal()
+        elif ans==10:
+            Hexadecimal-Decimal()
+        elif ans==11:
+            Deciaml-Binario()
+        elif ans==12:
+            Binario-Decimal()
+        elif ans==13:
+            Numeros primos en un rango definido()
+        elif ans==14:
+            Determinar si un numero es primo()
+        elif ans==15:
+            IMC()
+        elif ans==16:
+            print("salir gracias men")
+
+
+         
+            
 
 
 Menu()
