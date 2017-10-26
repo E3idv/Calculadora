@@ -8,6 +8,15 @@ def multiplicacion():
             break
     print("El total es:",total)
     
+def Modulo():
+    x = float (input("Escribe el numero que quieres dividir: "))
+    y = float (input("Escribe el numero por el que quieres dividir "))
+    print ("El resultado es: ")
+    print (x/y)
+    print ("Su modulo es:")
+    print(x%y)
+
+    
 def potencia():
     print("Numero a elevar:")
     a=float(input())
