@@ -66,6 +66,23 @@ def raiz():
     resultado=a**(1/b)
     print(resultado)
     
+def Binario_Decimal():
+    binario=input('ingrese el numero binario: ')
+    numero=[]
+    contador=0
+    decimal=0
+    decimalizador=0
+    while (contador < len(binario)):
+        numero.append(int(binario[contador]))
+        contador=contador+1
+    while (decimalizador<len(binario)):
+        decimal=decimal*2
+        if (numero[decimalizador]==1):
+            decimal=decimal+1
+        decimalizador=decimalizador+1
+
+print decimal
+    
 def Menu():
     ans = True
     while ans:
@@ -113,7 +130,7 @@ def Menu():
         elif ans==11:
             Deciaml-Binario()
         elif ans==12:
-            Binario-Decimal()
+            Binario_Decimal()
         elif ans==13:
             Numeros_primos_en_un_rango_definido()
         elif ans==14:
