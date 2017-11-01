@@ -117,7 +117,7 @@ def Menu():
         8.-Hexadecimal-Binario
         9.-Decimal-Hexadecimal
         10.-Hexadecimal-Decimal
-        11.-Deciaml-Binario
+        11.-Decimal-Binario
         12.-Binario-Decimal
         13.-Numeros primos en un rango definido
         14.-Determinar si un numero es primo
@@ -166,6 +166,7 @@ def Menu():
 
 
 Menu()
+
 
 
 
