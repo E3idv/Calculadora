@@ -94,6 +94,14 @@ def Binario_Decimal():
 
     print ("Su decimal es:", decimal)
     
+def Decimal_Binario():
+  decimal=int(input("Numero Decimal:"))
+  resultado=""
+  while ((decimal // 2) != 0):
+    resultado=str(decimal%2)+resultado
+    decimal=decimal//2
+  print(str(decimal)+resultado)
+        
     
 def Menu():
     ans = True
