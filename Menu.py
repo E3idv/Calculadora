@@ -1,4 +1,4 @@
-def multiplicacion():
+def Multiplicacion():
     total=1
     print("Ponga 0 para cuando quiera terminar")
     while True:
@@ -11,13 +11,17 @@ def multiplicacion():
 def Modulo():
     x = float (input("Escribe el numero que quieres dividir: "))
     y = float (input("Escribe el numero por el que quieres dividir "))
-    print ("El resultado es: ")
-    print (x/y)
-    print ("Su modulo es:")
-    print(x%y)
+    
+    if (y==0):
+      print("No se puede dividir entre 0")
+    else:
+      print ("El resultado es: ")
+      print (x/y)
+      print ("Su modulo es:")
+      print(x%y)
 
     
-def potencia():
+def Potencia():
     print("Numero a elevar:")
     a=float(input())
     print("Potencia:")
@@ -41,13 +45,17 @@ def Numeros_primos_en_un_rango_definido():
           print( str(contador2)+ " no es primo")
       contador2=contador2 + 1
     
- def division ():
+def Division ():
     x = float (input("Escribe el numero que quieres dividir: "))
     y = float (input("Escribe el numero por el que quieres dividir "))
-    print ("El resultado es: ")
-    print (x/y)
     
- def suma():
+    if (y==0):
+      print("No se puede dividir entre 0")
+    else:
+      print ("El resultado es: ")
+      print (x/y)
+    
+def Suma():
     total=0.0
     print("Ponga 0 para cuando quiera terminar")
     while True:
@@ -58,13 +66,16 @@ def Numeros_primos_en_un_rango_definido():
     print("El total es:",total)
     
 
-def raiz():
+def Raiz():
     print("Numero a sacar raiz")
     a=float(input())
     print("Raiz")
     b=float(input())
-    resultado=a**(1/b)
-    print(resultado)
+    if (b==0):
+      print("No existe la raiz 0")
+    else:
+      resultado=a**(1/b)
+      print(resultado)
     
 def Binario_Decimal():
     binario=input('ingrese el numero binario: ')
@@ -81,7 +92,8 @@ def Binario_Decimal():
             decimal=decimal+1
         decimalizador=decimalizador+1
 
-print decimal
+    print ("Su decimal es:", decimal)
+    
     
 def Menu():
     ans = True
@@ -105,14 +117,14 @@ def Menu():
         16.-Salir y acabar de sufrir
         """)
 
-        ans=int(input("Que te gustaria hacer"))
+        ans=int(input("Que te gustaria hacer:"))
        
         if ans==1:
-           suma()
+           Suma()
         elif ans==2:
-            multiplicacion()
+            Multiplicacion()
         elif ans==3:
-           division()
+           Division()
         elif ans==4:
             Modulo()
         elif ans==5:
@@ -120,15 +132,15 @@ def Menu():
         elif ans==6:
             Raiz()
         elif ans==7:
-            Binario-Hexadecimal()
+            Binario_Hexadecimal()
         elif ans==8:
-            Hexadecimal-Binario()
+            Hexadecimal_Binario()
         elif ans==9:
-            Decimal-Hexadecimal()
+            Decimal_Hexadecimal()
         elif ans==10:
-            Hexadecimal-Decimal()
+            Hexadecimal_Decimal()
         elif ans==11:
-            Deciaml-Binario()
+            Decimal_Binario()
         elif ans==12:
             Binario_Decimal()
         elif ans==13:
