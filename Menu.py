@@ -76,7 +76,7 @@ def Raiz():
     else:
       resultado=a**(1/b)
       print(resultado)
-    
+  
 def Binario_Decimal():
     binario=input('Ingrese el numero binario: ')
     numero=[]
@@ -101,7 +101,16 @@ def Decimal_Binario():
     resultado=str(decimal%2)+resultado
     decimal=decimal//2
   print "El numero en binario equivalente es: "+(str(decimal)+resultado)
-        
+
+def Hexadecimal-Decimal():
+    while True:
+        print("introdzca 'x'.")
+        hexdec = input("introduzca numero en hexadecimal")
+        if hexdec =='x':
+            break
+        else:
+            dec = int(hexdec,16)
+            print(hexdec,"en decimal = ",str(dec),"\n")        
     
 def Menu():
     ans = True
