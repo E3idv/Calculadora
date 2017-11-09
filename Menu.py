@@ -78,7 +78,7 @@ def Raiz():
       print(resultado)
     
 def Binario_Decimal():
-    binario=input('ingrese el numero binario: ')
+    binario=input('Ingrese el numero binario: ')
     numero=[]
     contador=0
     decimal=0
@@ -95,12 +95,12 @@ def Binario_Decimal():
     print ("Su decimal es:", decimal)
     
 def Decimal_Binario():
-  decimal=int(input("Numero Decimal:"))
+  decimal=int(input("Ingreese el numero decimal:"))
   resultado=""
   while ((decimal // 2) != 0):
     resultado=str(decimal%2)+resultado
     decimal=decimal//2
-  print(str(decimal)+resultado)
+  print "El numero en binario equivalente es: "+(str(decimal)+resultado)
         
     
 def Menu():
