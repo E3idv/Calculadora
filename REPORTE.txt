@@ -1,7 +1,9 @@
-reporte semanal:
-semana-1:
-Ivan- realizo Funcion Decimal_Binario y arreglo bug al usar el 0
-sergio- Realizo Funcion Binario_Decimal y agrego sintaxis para el usuario
-Yhaliff- realizo Funcio Hexadecimal_Decimal
-Gonzalo-or Organizo las taereas de hacknplan,ip agrego los tags de bugs en hacknplan,s realizo el reporte semanal,er arreglo un error sintactico en la funcion Hexadecimal_Decimal, fue elejido como el encargado de los reportes semanales
-Fin semana 1
+semana 1
+Ivan:
+  -realizo Funcion Decimal_Binario y arreglo bug al usar el 0
+sergio:
+  -Realizo Funcion Binario_Decimal y agrego sintaxis para el usuario
+Yhaliff:
+  -realizo Funcio Hexadecimal_Decimal
+Gonzalo:
+  -or Organizo las taereas de hacknplan,ip agrego los tags de bugs en hacknplan,s realizo el reporte semanal,er arreglo un        error sintactico en la funcion Hexadecimal_Decimal, fue elejido como el encargado de los reportes semanales
