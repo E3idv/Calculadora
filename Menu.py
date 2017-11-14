@@ -31,7 +31,12 @@ def Potencia():
     
 def Numeros_primos_en_un_rango_definido():
     x=int(input("Introduzca hasta que numero quiere saber si los numeros son primos: "))
+    while (x.isdigit() ==False):
+        print ("Rango invalido, por favor introdusca un numero valido")
+        x=input("Introduzca hasta que numero quiere saber si los numeros son primos: ")
+    x=int(x)
     contador2=1
+    print ("Los numeros primos hatsa ese rango son:")
     while(contador2<x+1):
       esprimo=True
       contador=2
@@ -40,9 +45,7 @@ def Numeros_primos_en_un_rango_definido():
               esprimo=False
           contador=contador+1
       if(esprimo):
-          print (str(contador2)+" es primo")
-      else:
-          print( str(contador2)+ " no es primo")
+          print (str(contador2))
       contador2=contador2 + 1
     
 def Division ():
