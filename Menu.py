@@ -1,3 +1,23 @@
+#esta Funcion nos dice si un numero es primo o no, 
+#si no lo es simplemente nos indica porque 
+#escribiendo los numeros por los que es divisuble l numero introducido
+
+def Determinar_si_un_numero_es_primo():
+  numero= int(input("¿Qué numero quieres que analize? "))
+  valor= range(2,numero)
+  contador = 0
+  for n in valor:
+      if (numero %n==0):
+         contador +=1
+         print("divisor:", n) 
+         #aqui es donde imprimen los valores con los que es divisible el numero que no es primo
+
+
+  if(contador > 0 ):
+     print("El numero numero no es primo")
+  else:
+      print("El numero numero es primo")
+
 def Multiplicacion():
     total=1
     print("Ponga 0 para cuando quiera terminar")
