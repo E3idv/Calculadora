@@ -123,7 +123,7 @@ def Decimal_Binario():
   while ((decimal // 2) != 0):
     resultado=str(decimal%2)+resultado
     decimal=decimal//2
-  print "El numero en binario equivalente es: "+(str(decimal)+resultado)
+  print ("El numero en binario equivalente es: ")+(str(decimal)+resultado)
 
 def Hexadecimal_Decimal():
     while True:
