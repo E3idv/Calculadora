@@ -134,7 +134,13 @@ def Hexadecimal_Decimal():
         else:
             dec = int(hexdec,16)
             print(hexdec,"en decimal = ",str(dec),"\n")        
-    
+  
+def Binario_Hexadecimal():
+  print('ingrese su valor binario para que sea convertido hexadecimal')
+  binario=input(str)
+  hexadecimal=hex(int(binario,2))
+  print(hexadecimal)
+
 def Menu():
     ans = True
     while ans:
