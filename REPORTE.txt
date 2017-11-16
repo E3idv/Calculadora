@@ -11,3 +11,9 @@ Gonzalo:
 semana 2
 Gonzalo:
   -Realizo funcion de "determinar si un numero es primo o no", corrigio un error en la funcion "decimal binerio"que consistie en unos parentesis 
+Sergio:
+   -Funcion numeros primos en rangos, ya no se bugea si no ponen numero, agrego comentarios
+Yhaliff:
+   -Funcion Binario-Hexadecimal.
+Ivan:
+    -Corrigio error en la funcion multiplicacion.
