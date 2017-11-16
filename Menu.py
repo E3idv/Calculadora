@@ -19,13 +19,13 @@ def Determinar_si_un_numero_es_primo():
       print("El numero numero es primo")
 
 def Multiplicacion():
-    total=1
-    print("Ponga 0 para cuando quiera terminar")
+    total=1.0
+    print("Ponga 1 para cuando quiera terminar")
     while True:
         numero=float(input("Numero:"))
         total*=numero
-        if numero=="":
-            break
+        if numero== 1:
+          break
     print("El total es:",total)
     
 def Modulo():
