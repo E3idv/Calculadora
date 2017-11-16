@@ -136,7 +136,7 @@ def Hexadecimal_Decimal():
             print(hexdec,"en decimal = ",str(dec),"\n")        
   
 def Binario_Hexadecimal():
-  print('ingrese su valor binario para que sea convertido hexadecimal')
+  print('ingrese su valor binario para que sea convertido a hexadecimal')
   binario=input(str)
   hexadecimal=hex(int(binario,2))
   print(hexadecimal)
