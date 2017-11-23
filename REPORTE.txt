@@ -20,3 +20,6 @@ Ivan:
 semana 3
 Sergio:
   -Correccion de binario a decimal: ahora solo acepta los numeros "1" y "0"
+  Ivan:
+  -Correccion de errores menores, de sintaxis y se agrego un time.sleep
+  
