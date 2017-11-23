@@ -17,7 +17,34 @@ def Determinar_si_un_numero_es_primo():
      print("El numero numero no es primo")
   else:
       print("El numero numero es primo")
-
+      
+#esta funcion calcula el indice de masa corporal pidiendo al usuario
+#su peso, y estatura para despues calcularlo, y tambien te muestra 
+#una tabla sobre los indices normalees, bajos y altos, para que compares 
+def IMC():
+  #aqui se imprime la tabla
+  print("-"*85)
+  print("Menor a 18"+(" -"*10)+ " Peso bajo. Necesario valorar signos de desnutrición")
+  print("-"*85)
+  print("18 a 24.9"+(" -"*10)+ " Normal")
+  print("-"*85)
+  print("25 a 26.9"+(" -"*10)+ " Sobrepeso")
+  print("-"*85)
+  print("Mayor a 27"+(" -"*10)+ " Obesidad")
+  print("-"*85)
+  print("27 a 29.9"+(" -"*10)+ " Obesidad grado I. Riesgo relativo alto para desarrollar enfermedades cardiovasculares")
+  print("-"*85)
+  print("30 a 39.9"+(" -"*10)+ " Obesidad grado II. Riesgo relativo muy alto para el desarrollo de enfermedades cardiovasculares")
+  print("-"*85)
+  print("Mayor a 40"+(" -"*10)+ " Obesidad grado III Extrema o Mórbida. Riesgo relativo extremadamente alto para el desarrollo de enfermedades cardiovasculares")
+  print("-"*85)
+  #aqui te pide los valores
+  x=float(input("¿Cuanto pesas(Kg)?"))
+  y=float(input("¿Cuanto mides(metros)?"))
+  #aqui se efectua el calculo y te arroja el resultado
+  z=x/(y*y)
+  print("Tu indice de masa corporal es "+str(z))
+      
 def Multiplicacion():
     total=1.0
     print("Ponga 1 para cuando quiera terminar")
