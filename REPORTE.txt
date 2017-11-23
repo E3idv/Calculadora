@@ -20,6 +20,8 @@ Ivan:
 semana 3
 Sergio:
   -Correccion de binario a decimal: ahora solo acepta los numeros "1" y "0"
-  Ivan:
+Ivan:
   -Correccion de errores menores, de sintaxis y se agrego un time.sleep
+Gonzalo:
+  _Realizo la funcion del indice de masa corporal, correccion de algunos errores en el lenguaje
   
