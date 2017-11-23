@@ -130,9 +130,34 @@ def Raiz():
 def Binario_Decimal():
     binario=input('Ingrese el numero binario: ')
     numero=[]
+    comprobar=[]
+    aceptable=["1","0"]
     contador=0
+    contadoracep=0
     decimal=0
     decimalizador=0
+    listones=False
+    contar=0
+    while(contadoracep<len(binario)):
+        comprobar.append(binario[contadoracep])
+        contadoracep=contadoracep+1
+    while(listones==False):
+        while(contar<len(comprobar)):
+            if (comprobar[contar] in aceptable):
+                contar+=1
+            else:
+                contadoracep=0
+                contar=0
+                comprobar=[]
+                print""
+                print'Solo se admite "1" y "0"'
+                binario=input('Ingrese el numero binario: ')
+                while(contadoracep<len(binario)):
+                    comprobar.append(binario[contadoracep])
+                    contadoracep=contadoracep+1
+        listones=True
+    
+    print""
     while (contador < len(binario)):
         numero.append(int(binario[contador]))
         contador=contador+1
@@ -141,8 +166,9 @@ def Binario_Decimal():
         if (numero[decimalizador]==1):
             decimal=decimal+1
         decimalizador=decimalizador+1
-
+    
     print ("Su decimal es:", decimal)
+
     
 def Decimal_Binario():
   decimal=int(input("Ingreese el numero decimal:"))
