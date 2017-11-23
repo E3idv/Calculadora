@@ -19,4 +19,4 @@ Ivan:
     -Corrigio error en la funcion multiplicacion.
 semana 3
 Sergio:
-  -Correcion de binario a decimal: ahora solo acepta los numeros "1" y "0"
+  -Correccion de binario a decimal: ahora solo acepta los numeros "1" y "0"
