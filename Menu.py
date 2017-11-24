@@ -5,16 +5,27 @@
 def Determinar_si_un_numero_es_primo():
     
     numero = (input("¿Qué numero quieres que analize? "))
-    lista_permitida=["1","2","3","4","5","6","7","8","9","0"]
+    lista_permitiday=["1","2","3","4","5","6","7","8","9","0",]
     comprobar=0
-    while(comprobar<len(numero)):
-        if(numero[comprobar] in lista_permitida):
-            comprobar+=1
-        else:
-            comprobar=0
-            print("")
-            print("Valor invalido")
-            numero = (input("¿Qué numero quieres que analize? "))
+    comprobado="no"
+    while (comprobado== "no"):
+        if(numero==""):
+                comprobar=0
+                print("")
+                print("Valor invalido")
+                numero = (input("Numero: "))
+        elif(comprobar<len(numero)):
+            while(comprobar<len(numero)):
+                if(numero[comprobar] in lista_permitiday):
+                    comprobar+=1
+                
+                else:
+                    comprobar=0
+                    print("")
+                    print("Valor invalido")
+                    numero = (input("Numero: "))
+            if(not numero==""):
+                comprobado="si"
     numero=int(numero)
     valor = range(2, numero)
     contador = 0
@@ -25,9 +36,9 @@ def Determinar_si_un_numero_es_primo():
             # aqui es donde imprimen los valores con los que es divisible el numero que no es primo
 
     if (contador > 0):
-        print("El numero numero no es primo")
+        print("El numero no es primo")
     else:
-        print("El numero numero es primo")
+        print("El numero es primo")
 
 
 # esta funcion calcula el indice de masa corporal pidiendo al usuario
@@ -55,29 +66,51 @@ def IMC():
     print("-" * 150)
     # aqui te pide los valores
     x = (input("¿Cuanto pesas(Kg)?"))
-    lista_permitidax=["1","2","3","4","5","6","7","8","9","0","."]
+    lista_permitiday=["1","2","3","4","5","6","7","8","9","0","."]
     comprobar=0
-    while(comprobar<len(x)):
-        if(x[comprobar] in lista_permitidax):
-            comprobar+=1
-        else:
-            comprobar=0
-            print("")
-            print("Valor invalido")
-            x = (input("¿Qué numero quieres que analize? "))
+    comprobado="no"
+    while (comprobado== "no"):
+        if(x==""):
+                comprobar=0
+                print("")
+                print("Valor invalido")
+                x = (input("¿Cuanto pesas(Kg)?"))
+        elif(comprobar<len(x)):
+            while(comprobar<len(x)):
+                if(x[comprobar] in lista_permitiday):
+                    comprobar+=1
+                
+                else:
+                    comprobar=0
+                    print("")
+                    print("Valor invalido")
+                    x = (input("¿Cuanto pesas(Kg)?"))
+            if(not numero==""):
+                comprobado="si"
     x=float(x)
 
     y = (input("¿Cuanto mides(metros)?"))
     lista_permitiday=["1","2","3","4","5","6","7","8","9","0","."]
     comprobar=0
-    while(comprobar<len(y)):
-        if(y[comprobar] in lista_permitiday):
-            comprobar+=1
-        else:
-            comprobar=0
-            print("")
-            print("Valor invalido")
-            y = (input("¿Qué numero quieres que analize? "))
+    comprobado="no"
+    while (comprobado== "no"):
+        if(y==""):
+                comprobar=0
+                print("")
+                print("Valor invalido")
+                y = (input("¿Cuanto mides(metros)?"))
+        elif(comprobar<len(y)):
+            while(comprobar<len(y)):
+                if(y[comprobar] in lista_permitiday):
+                    comprobar+=1
+                
+                else:
+                    comprobar=0
+                    print("")
+                    print("Valor invalido")
+                    y = (input("¿Cuanto mides(metros)?"))
+            if(not numero==""):
+                comprobado="si"
     y=float(y)
     # aqui se efectua el calculo y te arroja el resultado
     z = x / (y * y)
@@ -91,14 +124,25 @@ def Multiplicacion():
         numero = (input("Numero:"))
         lista_permitiday=["1","2","3","4","5","6","7","8","9","0","."]
         comprobar=0
-        while(comprobar<len(numero)):
-            if(numero[comprobar] in lista_permitiday):
-                comprobar+=1
-            else:
-                comprobar=0
-                print("")
-                print("Valor invalido")
-                numero = (input("¿Qué numero quieres que analize? "))
+        comprobado="no"
+        while (comprobado== "no"):
+            if(numero==""):
+                    comprobar=0
+                    print("")
+                    print("Valor invalido")
+                    numero = (input("Numero:"))
+            elif(comprobar<len(numero)):
+                while(comprobar<len(numero)):
+                    if(numero[comprobar] in lista_permitiday):
+                        comprobar+=1
+                    
+                    else:
+                        comprobar=0
+                        print("")
+                        print("Valor invalido")
+                        numero = (input("Numero:"))
+                if(not numero==""):
+                    comprobado="si"
         numero=float(numero)
         total *= numero
 
@@ -111,27 +155,49 @@ def Modulo():
     x = (input("Escribe el numero que quieres dividir: "))
     lista_permitiday=["1","2","3","4","5","6","7","8","9","0","."]
     comprobar=0
-    while(comprobar<len(x)):
-        if(x[comprobar] in lista_permitiday):
-            comprobar+=1
-        else:
-            comprobar=0
-            print("")
-            print("Valor invalido")
-            x = (input("¿Escribe el numero que quiere dividir: "))
+    comprobado="no"
+    while (comprobado== "no"):
+        if(x==""):
+                comprobar=0
+                print("")
+                print("Valor invalido")
+                x = (input("Escribe el numero que quieres dividir: "))
+        elif(comprobar<len(x)):
+            while(comprobar<len(x)):
+                if(x[comprobar] in lista_permitiday):
+                    comprobar+=1
+                
+                else:
+                    comprobar=0
+                    print("")
+                    print("Valor invalido")
+                    x = (input("Escribe el numero que quieres dividir: "))
+            if(not numero==""):
+                comprobado="si"
     x=float(x)
 
     y = (input("Escribe el numero por el que lo quieres dividir: "))
     lista_permitiday=["1","2","3","4","5","6","7","8","9","0","."]
     comprobar=0
-    while(comprobar<len(y)):
-        if(y[comprobar] in lista_permitiday):
-            comprobar+=1
-        else:
-            comprobar=0
-            print("")
-            print("Valor invalido")
-            y = (input("Escribi el numero por el que lo quieres dividir: "))
+    comprobado="no"
+    while (comprobado== "no"):
+        if(y==""):
+                comprobar=0
+                print("")
+                print("Valor invalido")
+                y = (input("Escribe el numero por el que lo quieres dividir: "))
+        elif(comprobar<len(y)):
+            while(comprobar<len(y)):
+                if(y[comprobar] in lista_permitiday):
+                    comprobar+=1
+                
+                else:
+                    comprobar=0
+                    print("")
+                    print("Valor invalido")
+                    y = (input("Escribe el numero por el que lo quieres dividir: "))
+            if(not numero==""):
+                comprobado="si"
     y=float(y)
 
     if (y == 0):
@@ -144,32 +210,53 @@ def Modulo():
 
 
 def Potencia():
-    print("Numero a elevar: ")
-    a = (input())
+    a = (input("Numero a elevar: "))
     lista_permitiday=["1","2","3","4","5","6","7","8","9","0","."]
     comprobar=0
-    while(comprobar<len(a)):
-        if(a[comprobar] in lista_permitiday):
-            comprobar+=1
-        else:
-            comprobar=0
-            print("")
-            print("Valor invalido")
-            a = (input("Numero a elevar: "))
+    comprobado="no"
+    while (comprobado== "no"):
+        if(a==""):
+                comprobar=0
+                print("")
+                print("Valor invalido")
+                a = (input("Numero a elevar: "))
+        elif(comprobar<len(a)):
+            while(comprobar<len(a)):
+                if(a[comprobar] in lista_permitiday):
+                    comprobar+=1
+                
+                else:
+                    comprobar=0
+                    print("")
+                    print("Valor invalido")
+                    a = (input("Numero a elevar: "))
+            if(not numero==""):
+                comprobado="si"
     a=float(a)
 
-    print("Potencia:")
-    b = (input())
+    
+    b = (input("Potencia:"))
     lista_permitiday=["1","2","3","4","5","6","7","8","9","0","."]
     comprobar=0
-    while(comprobar<len(b)):
-        if(b[comprobar] in lista_permitiday):
-            comprobar+=1
-        else:
-            comprobar=0
-            print("")
-            print("Valor invalido")
-            b = (input("potencia: "))
+    comprobado="no"
+    while (comprobado== "no"):
+        if(b==""):
+                comprobar=0
+                print("")
+                print("Valor invalido")
+                b = (input("Potencia:"))
+        elif(comprobar<len(b)):
+            while(comprobar<len(b)):
+                if(b[comprobar] in lista_permitiday):
+                    comprobar+=1
+                
+                else:
+                    comprobar=0
+                    print("")
+                    print("Valor invalido")
+                    b = (input("Potencia:"))
+            if(not numero==""):
+                comprobado="si"
     b=float(b)
 
     resultado = a ** b
@@ -200,27 +287,49 @@ def Division():
     x = (input("Escribe el numero que quieres dividir: "))
     lista_permitiday=["1","2","3","4","5","6","7","8","9","0","."]
     comprobar=0
-    while(comprobar<len(x)):
-        if(x[comprobar] in lista_permitiday):
-            comprobar+=1
-        else:
-            comprobar=0
-            print("")
-            print("Valor invalido")
-            x = (input("Escribi el numero que quieres dividir: "))
+    comprobado="no"
+    while (comprobado== "no"):
+        if(x==""):
+                comprobar=0
+                print("")
+                print("Valor invalido")
+                x = (input("Escribe el numero que quieres dividir: "))
+        elif(comprobar<len(x)):
+            while(comprobar<len(x)):
+                if(x[comprobar] in lista_permitiday):
+                    comprobar+=1
+                
+                else:
+                    comprobar=0
+                    print("")
+                    print("Valor invalido")
+                    x = (input("Escribe el numero que quieres dividir: "))
+            if(not numero==""):
+                comprobado="si"
     x=float(x)
     
     y = (input("Escribe el numero por el que lo quieres dividir "))
     lista_permitiday=["1","2","3","4","5","6","7","8","9","0","."]
     comprobar=0
-    while(comprobar<len(y)):
-        if(y[comprobar] in lista_permitiday):
-            comprobar+=1
-        else:
-            comprobar=0
-            print("")
-            print("Valor invalido")
-            y = (input("Escribe el numero por el que lo quieres dividir "))
+    comprobado="no"
+    while (comprobado== "no"):
+        if(y==""):
+                comprobar=0
+                print("")
+                print("Valor invalido")
+                y = (input("Escribe el numero por el que lo quieres dividir "))
+        elif(comprobar<len(y)):
+            while(comprobar<len(y)):
+                if(y[comprobar] in lista_permitiday):
+                    comprobar+=1
+                
+                else:
+                    comprobar=0
+                    print("")
+                    print("Valor invalido")
+                    y = (input("Escribe el numero por el que lo quieres dividir "))
+            if(not numero==""):
+                comprobado="si"
     y=float(y)
     if (y == 0):
         print("No se puede dividir entre 0")
@@ -236,20 +345,26 @@ def Suma():
         numero = (input("Numero:"))
         lista_permitiday=["1","2","3","4","5","6","7","8","9","0","."]
         comprobar=0
-        while(comprobar<len(numero) or numero[comprobar]=="" ):
-            if(numero[comprobar] in lista_permitiday):
-                comprobar+=1
-            elif(numero[comprobar]==""):
-                comprobar=0
-                print("")
-                print("Valor invalido")
-                numero = (input("¿Qué numero quieres que analize? "))
-            else:
-                comprobar=0
-                print("")
-                print("Valor invalido")
-                numero = (input("¿Qué numero quieres que analize? "))
-        numero=float(numero)
+        comprobado="no"
+        while (comprobado== "no"):
+            if(numero==""):
+                    comprobar=0
+                    print("")
+                    print("Valor invalido")
+                    numero = (input("Numero: "))
+            elif(comprobar<len(numero)):
+                while(comprobar<len(numero)):
+                    if(numero[comprobar] in lista_permitiday):
+                        comprobar+=1
+                    
+                    else:
+                        comprobar=0
+                        print("")
+                        print("Valor invalido")
+                        numero = (input("¿Qué numero quieres que analize? "))
+                if(not numero==""):
+                    comprobado="si"
+            numero=float(numero)
         total += numero
         if numero == 0:
             break
@@ -257,31 +372,53 @@ def Suma():
 
 
 def Raiz():
-    print("Numero a sacar raiz: ")
-    a = (input())
+ 
+    a = (input("Numero a sacar raiz: "))
     lista_permitiday=["1","2","3","4","5","6","7","8","9","0","."]
     comprobar=0
-    while(comprobar<len(a)):
-        if(a[comprobar] in lista_permitiday):
-            comprobar+=1
-        else:
-            comprobar=0
-            print("")
-            print("Valor invalido")
-            a = (input("Numero a sacar raiz: "))
+    comprobado="no"
+    while (comprobado== "no"):
+        if(a==""):
+                comprobar=0
+                print("")
+                print("Valor invalido")
+                a = (input("Numero a sacar raiz: "))
+        elif(comprobar<len(a)):
+            while(comprobar<len(a)):
+                if(a[comprobar] in lista_permitiday):
+                    comprobar+=1
+                
+                else:
+                    comprobar=0
+                    print("")
+                    print("Valor invalido")
+                    a = (input("Numero a sacar raiz: "))
+            if(not numero==""):
+                comprobado="si"
     a=float(a)
 
     b = (input("Raiz: "))
     lista_permitiday=["1","2","3","4","5","6","7","8","9","0","."]
     comprobar=0
-    while(comprobar<len(b)):
-        if(b[comprobar] in lista_permitiday):
-            comprobar+=1
-        else:
-            comprobar=0
-            print("")
-            print("Valor invalido")
-            b = (input("Raiz: "))
+    comprobado="no"
+    while (comprobado== "no"):
+        if(b==""):
+                comprobar=0
+                print("")
+                print("Valor invalido")
+                b = (input("Raiz: "))
+        elif(comprobar<len(b)):
+            while(comprobar<len(b)):
+                if(b[comprobar] in lista_permitiday):
+                    comprobar+=1
+                
+                else:
+                    comprobar=0
+                    print("")
+                    print("Valor invalido")
+                    b = (input("Raiz: "))
+            if(not numero==""):
+                comprobado="si"
     b=float(b)
 
     if (b == 0):
@@ -335,18 +472,30 @@ def Binario_Decimal():
 
 
 def Decimal_Binario():
-    lista_permitida=["1","2","3","4","5","6","7","8","9","0",]
+    
     decimal=(input("Ingreese el numero decimal:"))
     resultado=""
+    lista_permitida=["1","2","3","4","5","6","7","8","9","0",]
     comprobar=0
-    while(comprobar<len(decimal)):
-        if(decimal[comprobar] in lista_permitida):
-            comprobar+=1
-        else:
-            print("")
-            print("Valor invalido")
-            decimal=(input("Ingreese el numero decimal:"))
-            comprobar=0 
+    comprobado="no"
+    while (comprobado== "no"):
+        if(decimal==""):
+                comprobar=0
+                print("")
+                print("Valor invalido")
+                decimal=(input("Ingreese el numero decimal:"))
+        elif(comprobar<len(decimal)):
+            while(comprobar<len(decimal)):
+                if(decimal[comprobar] in lista_permitida):
+                    comprobar+=1
+                
+                else:
+                    comprobar=0
+                    print("")
+                    print("Valor invalido")
+                    decimal=(input("Ingreese el numero decimal:"))
+            if(not numero==""):
+                comprobado="si"
     decimal=int(decimal)
     while ((decimal // 2) != 0):
       resultado=str(decimal%2)+resultado
@@ -373,24 +522,39 @@ def Hexadecimal_Decimal():
     comprobar=0
     hexa=input("Ingrese el numero hexadecimal: ").upper()
     contador=int(len(hexa))-1
+    comprobado="no"
     while(contador>=0):
         lista_hexa.append(hexa[contador])
         contador-=1
-    
-    while(comprobar<len(lista_hexa)):
-        if(lista_hexa[comprobar] in lista_permitida):
-            comprobar+=1
-        else:
-            lista_hexa=[]
-            contador=0
-            comprobar=0
-            print ("")
-            print ("Ingrese in valor valido")
-            hexa=input("Ingrese el numero hexadecimal: ").upper()
-            contador=int(len(hexa))-1
-            while(contador>=0):
-                lista_hexa.append(hexa[contador])
-                contador-=1
+    while (comprobado== "no"):
+        if(hexa==""):
+                    lista_hexa=[]
+                    contador=0
+                    comprobar=0
+                    print ("")
+                    print ("Ingrese in valor valido")
+                    hexa=input("Ingrese el numero hexadecimal: ").upper()
+                    contador=int(len(hexa))-1
+                    while(contador>=0):
+                        lista_hexa.append(hexa[contador])
+                        contador-=1
+        elif(comprobar<len(lista_hexa)):
+            while(comprobar<len(lista_hexa)):
+                if(lista_hexa[comprobar] in lista_permitida):
+                    comprobar+=1
+                else:
+                    lista_hexa=[]
+                    contador=0
+                    comprobar=0
+                    print ("")
+                    print ("Ingrese in valor valido")
+                    hexa=input("Ingrese el numero hexadecimal: ").upper()
+                    contador=int(len(hexa))-1
+                    while(contador>=0):
+                        lista_hexa.append(hexa[contador])
+                        contador-=1
+            if(not numero==""):
+                comprobado="si"
     
     
     while (sumador<len(lista_hexa)):
@@ -419,31 +583,53 @@ def Binario_Hexadecimal():
     binario = input('ingrese su valor binario para que sea convertido a hexadecimal: ' )
     lista_permitiday=["1","0"]
     comprobar=0
-    while(comprobar<len(binario)):
-        if(binario[comprobar] in lista_permitiday):
-            comprobar+=1
-        else:
-            comprobar=0
-            print("")
-            print("Valor invalido")
-            binario = input('ingrese su valor binario para que sea convertido a hexadecimal: ')
+    comprobado="no"
+    while (comprobado== "no"):
+        if(binario==""):
+                comprobar=0
+                print("")
+                print("Valor invalido")
+                binario = input('ingrese su valor binario para que sea convertido a hexadecimal: ' )
+        elif(comprobar<len(binario)):
+            while(comprobar<len(binario)):
+                if(binario[comprobar] in lista_permitiday):
+                    comprobar+=1
+                
+                else:
+                    comprobar=0
+                    print("")
+                    print("Valor invalido")
+                    binario = input('ingrese su valor binario para que sea convertido a hexadecimal: ' )
+            if(not numero==""):
+                comprobado="si"
     
     hexadecimal = hex(int(binario, 2))
     print(hexadecimal)
 
 def Decimal_Hexadecimal():
-    lista_permitida=["1","2","3","4","5","6","7","8","9","0",]
     decimal=(input("Ingreese el numero decimal:"))
     resultado=""
+    lista_permitida=["1","2","3","4","5","6","7","8","9","0",]
     comprobar=0
-    while(comprobar<len(decimal)):
-        if(decimal[comprobar] in lista_permitida):
-            comprobar+=1
-        else:
-            print("")
-            print("Valor invalido")
-            decimal=(input("Ingreese el numero decimal:"))
-            comprobar=0 
+    comprobado="no"
+    while (comprobado== "no"):
+        if(decimal==""):
+                comprobar=0
+                print("")
+                print("Valor invalido")
+                decimal=(input("Ingreese el numero decimal:"))
+        elif(comprobar<len(decimal)):
+            while(comprobar<len(decimal)):
+                if(decimal[comprobar] in lista_permitida):
+                    comprobar+=1
+                
+                else:
+                    comprobar=0
+                    print("")
+                    print("Valor invalido")
+                    decimal=(input("Ingreese el numero decimal:"))
+            if(not numero==""):
+                comprobado="si"
     decimal=int(decimal)
     while ((decimal // 2) != 0):
       resultado=str(decimal%2)+resultado
@@ -473,18 +659,39 @@ def Hexadecimal_Binario():
         lista_hexa.append(hexa[contador])
         contador-=1
     
-    while(comprobar<len(lista_hexa)):
-        if(lista_hexa[comprobar] in lista_permitida):
-            comprobar+=1
-        else:
-            lista_hexa=[]
-            contador=0
-            comprobar=0
-            hexa=input("Ingrese el numero hexadecimal: ").upper()
-            contador=int(len(hexa))-1
-            while(contador>=0):
-                lista_hexa.append(hexa[contador])
-                contador-=1
+    comprobado="no"
+    while(contador>=0):
+        lista_hexa.append(hexa[contador])
+        contador-=1
+    while (comprobado== "no"):
+        if(hexa==""):
+                    lista_hexa=[]
+                    contador=0
+                    comprobar=0
+                    print ("")
+                    print ("Ingrese in valor valido")
+                    hexa=input("Ingrese el numero hexadecimal: ").upper()
+                    contador=int(len(hexa))-1
+                    while(contador>=0):
+                        lista_hexa.append(hexa[contador])
+                        contador-=1
+        elif(comprobar<len(lista_hexa)):
+            while(comprobar<len(lista_hexa)):
+                if(lista_hexa[comprobar] in lista_permitida):
+                    comprobar+=1
+                else:
+                    lista_hexa=[]
+                    contador=0
+                    comprobar=0
+                    print ("")
+                    print ("Ingrese in valor valido")
+                    hexa=input("Ingrese el numero hexadecimal: ").upper()
+                    contador=int(len(hexa))-1
+                    while(contador>=0):
+                        lista_hexa.append(hexa[contador])
+                        contador-=1
+            if(not numero==""):
+                comprobado="si"
     
     
     while (sumador<len(lista_hexa)):
@@ -510,10 +717,10 @@ def Hexadecimal_Binario():
     while ((decimal // 2) != 0):
       resultado=str(decimal%2)+resultado
       decimal=decimal//2
+    binario=(str(decimal)+resultado)
     print("")
     print("")
-    print ("El numero en binario equivalente es: ")+(str(decimal)+resultado)
-
+    print ("El numero en binario equivalente es: "+ binario)
 
 import time
 
@@ -587,3 +794,4 @@ def Menu():
 
                        
 Menu()
+
