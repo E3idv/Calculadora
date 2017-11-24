@@ -25,3 +25,5 @@ Ivan:
 Gonzalo:
   _Realizo la funcion del indice de masa corporal, correccion de algunos errores en el lenguaje
   
+semana 4
+Correccion de errores general
