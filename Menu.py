@@ -1,7 +1,21 @@
+
+def Metro_Pulgada():
+  m=float(input("Ingrese su valor en metros:"))
+  print("")
+  p=m*39.3701
+  print("Su valor en pulgadas es: ", p)
+  
+def Pulgada_Metro():
+  p=float(input("Ingrese su valor en pulgadas:"))
+  print("")
+  m=p*0.0254
+  print("Su valor en metros es:",m)
+ 
+
 # esta Funcion nos dice si un numero es primo o no,
 # si no lo es simplemente nos indica porque
 # escribiendo los numeros por los que es divisuble l numero introducido
-
+   
 def Determinar_si_un_numero_es_primo():
     
     numero = (input("¿Qué numero quieres que analize? "))
@@ -726,7 +740,7 @@ import time
 
 def Menu():
     #son lo unicos valores permitido en esta funcion
-    aceptable=["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16"]
+    aceptable=["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18"]
     ans = True
     while ans:
         print("""
@@ -745,7 +759,9 @@ def Menu():
         13.-Numeros primos en un rango definido
         14.-Determinar si un numero es primo
         15.-IMC
-        16.-Salir y acabar de sufrir
+        16.-Metro_Pulgada
+        17.Pulgada_Metro
+        18.Salir
         """)
         ans = (input("Que te gustaria hacer:"))
        
@@ -783,6 +799,10 @@ def Menu():
             elif ans == 15:
                 IMC()
             elif ans == 16:
+                Metro_Pulgada()
+            elif ans==17:
+                Pulgada_Metro()
+            elif ans==18:
                 print("salir gracias men")
                 break
             time.sleep(3)
