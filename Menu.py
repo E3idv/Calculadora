@@ -607,9 +607,9 @@ def Binario_Hexadecimal():
     print(hexadecimal)
 
 def Decimal_Hexadecimal():
-    decimal=(input("Ingreese el numero decimal:"))
+    decimal=(input("Ingrese el numero decimal:"))
     resultado=""
-    lista_permitida=["1","2","3","4","5","6","7","8","9","0",]
+    lista_permitida=["1","2","3","4","5","6","7","8","9","0"]
     comprobar=0
     comprobado="no"
     while (comprobado== "no"):
@@ -628,7 +628,7 @@ def Decimal_Hexadecimal():
                     print("")
                     print("Valor invalido")
                     decimal=(input("Ingreese el numero decimal:"))
-            if(not numero==""):
+            if(not decimal==""):
                 comprobado="si"
     decimal=int(decimal)
     while ((decimal // 2) != 0):
