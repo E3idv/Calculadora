@@ -1,3 +1,18 @@
+#Metro a yardas
+#Se pide valor de metros
+
+def Metro_Yardas():
+    m=float(input("Cual sera su valor en metros:"))
+    y=m*1.094 #Aqui se efectua la conversion
+    print ("\nSu valor en yardas es:",y)
+
+#Yardas a metros
+#Se pide el valor yardas
+def Yardas_Metros ():
+
+    y=float(input("Cual sera su valor en yardas:"))
+    m=y*0.9144 #Aqui se efectua la conversion
+    print("\nSu valor en metros es:",m)
 
 def Metro_Pulgada():
   m=float(input("Ingrese su valor en metros:"))
@@ -740,7 +755,7 @@ import time
 
 def Menu():
     #son lo unicos valores permitido en esta funcion
-    aceptable=["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18"]
+    aceptable=["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20"]
     ans = True
     while ans:
         print("""
@@ -803,7 +818,11 @@ def Menu():
             elif ans==17:
                 Pulgada_Metro()
             elif ans==18:
-                print("salir gracias men")
+                Metro_Yardas()
+            elif ans==19:
+                Yardas_Metro()
+            elif ans==20:
+                 print("salir gracias men")
                 break
             time.sleep(3)
         elif(not ans in aceptable):
