@@ -151,7 +151,7 @@ def Multiplicacion():
     print("Ponga 1 para cuando quiera terminar")
     while True:
         numero = (input("Numero:"))
-        lista_permitiday=["1","2","3","4","5","6","7","8","9","0","."]
+        lista_permitiday=["1","2","3","4","5","6","7","8","9","0",".","-"]
         comprobar=0
         comprobado="no"
         while (comprobado== "no"):
@@ -182,7 +182,7 @@ def Multiplicacion():
 
 def Modulo():
     x = (input("Escribe el numero que quieres dividir: "))
-    lista_permitiday=["1","2","3","4","5","6","7","8","9","0","."]
+    lista_permitiday=["1","2","3","4","5","6","7","8","9","0",".","-"]
     comprobar=0
     comprobado="no"
     while (comprobado== "no"):
@@ -206,7 +206,7 @@ def Modulo():
     x=float(x)
 
     y = (input("Escribe el numero por el que lo quieres dividir: "))
-    lista_permitiday=["1","2","3","4","5","6","7","8","9","0","."]
+    lista_permitiday=["1","2","3","4","5","6","7","8","9","0",".","-"]
     comprobar=0
     comprobado="no"
     while (comprobado== "no"):
@@ -240,7 +240,7 @@ def Modulo():
 
 def Potencia():
     a = (input("Numero a elevar: "))
-    lista_permitiday=["1","2","3","4","5","6","7","8","9","0","."]
+    lista_permitiday=["1","2","3","4","5","6","7","8","9","0",".","-"]
     comprobar=0
     comprobado="no"
     while (comprobado== "no"):
@@ -265,7 +265,7 @@ def Potencia():
 
     
     b = (input("Potencia:"))
-    lista_permitiday=["1","2","3","4","5","6","7","8","9","0","."]
+    lista_permitiday=["1","2","3","4","5","6","7","8","9","0",".","-"]
     comprobar=0
     comprobado="no"
     while (comprobado== "no"):
@@ -314,7 +314,7 @@ def Numeros_primos_en_un_rango_definido():
 
 def Division():
     x = (input("Escribe el numero que quieres dividir: "))
-    lista_permitiday=["1","2","3","4","5","6","7","8","9","0","."]
+    lista_permitiday=["1","2","3","4","5","6","7","8","9","0",".","-"]
     comprobar=0
     comprobado="no"
     while (comprobado== "no"):
@@ -338,7 +338,7 @@ def Division():
     x=float(x)
     
     y = (input("Escribe el numero por el que lo quieres dividir "))
-    lista_permitiday=["1","2","3","4","5","6","7","8","9","0","."]
+    lista_permitiday=["1","2","3","4","5","6","7","8","9","0",".","-"]
     comprobar=0
     comprobado="no"
     while (comprobado== "no"):
@@ -372,7 +372,7 @@ def Suma():
     print("Ponga 0 para cuando quiera terminar")
     while True:
         numero = (input("Numero:"))
-        lista_permitiday=["1","2","3","4","5","6","7","8","9","0","."]
+        lista_permitiday=["1","2","3","4","5","6","7","8","9","0",".","-"]
         comprobar=0
         comprobado="no"
         while (comprobado== "no"):
@@ -403,7 +403,7 @@ def Suma():
 def Raiz():
  
     a = (input("Numero a sacar raiz: "))
-    lista_permitiday=["1","2","3","4","5","6","7","8","9","0","."]
+    lista_permitiday=["1","2","3","4","5","6","7","8","9","0",".","-"]
     comprobar=0
     comprobado="no"
     while (comprobado== "no"):
@@ -427,7 +427,7 @@ def Raiz():
     a=float(a)
 
     b = (input("Raiz: "))
-    lista_permitiday=["1","2","3","4","5","6","7","8","9","0","."]
+    lista_permitiday=["1","2","3","4","5","6","7","8","9","0",".","-"]
     comprobar=0
     comprobado="no"
     while (comprobado== "no"):
