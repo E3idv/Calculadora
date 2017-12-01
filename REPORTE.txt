@@ -27,3 +27,10 @@ Gonzalo:
   
 semana 4
 Correccion de errores general
+
+semana 5
+  Yhaliff:
+    Esto será un resumen de todo lo que hice durante toda la duración el projecto. Yo agregué las funciones de multiplicacion,  division, Binario-Hexadecimal y Hexadecimal_Decimal voy a expilcar solo la de Binario-Hexadecimal:
+    Binario-Hexadecimal.- Originalmente solo ingresabas unos str como input dentro de la funcion hex() de este modo el valor ingresado se convierte a hexadecimal, despues de eso se imprime el resultado, Sergio agrego el resto
+    
+    
