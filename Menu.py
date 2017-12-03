@@ -1,8 +1,31 @@
+
 #Metro a yardas
 #Se pide valor de metros
 
 def Metro_Yardas():
-    m=float(input("Cual sera su valor en metros:"))
+    m=(input("Cual sera su valor en metros:"))
+    lista_permitiday=["1","2","3","4","5","6","7","8","9","0",".","-"]
+    comprobar=0
+    comprobado="no"
+    while (comprobado== "no"):
+        if(m==""):
+                comprobar=0
+                print("")
+                print("Valor invalido")
+                m=(input("Cual sera su valor en metros:"))
+        elif(comprobar<len(m)):
+            while(comprobar<len(m)):
+                if(m[comprobar] in lista_permitiday):
+                    comprobar+=1
+                
+                else:
+                    comprobar=0
+                    print("")
+                    print("Valor invalido")
+                    m=(input("Cual sera su valor en metros:"))
+            if(not m==""):
+                comprobado="si"
+    m=float(m)
     y=m*1.094 #Aqui se efectua la conversion
     print ("\nSu valor en yardas es:",y)
 
@@ -10,18 +33,84 @@ def Metro_Yardas():
 #Se pide el valor yardas
 def Yardas_Metros ():
 
-    y=float(input("Cual sera su valor en yardas:"))
+    y=(input("Cual sera su valor en yardas:"))
+    lista_permitiday=["1","2","3","4","5","6","7","8","9","0",".","-"]
+    comprobar=0
+    comprobado="no"
+    while (comprobado== "no"):
+        if(y==""):
+                comprobar=0
+                print("")
+                print("Valor invalido")
+                y=float(input("Cual sera su valor en yardas:"))
+        elif(comprobar<len(y)):
+            while(comprobar<len(y)):
+                if(y[comprobar] in lista_permitiday):
+                    comprobar+=1
+                
+                else:
+                    comprobar=0
+                    print("")
+                    print("Valor invalido")
+                    y=float(input("Cual sera su valor en yardas:"))
+            if(not y==""):
+                comprobado="si"
+    y=float(y)
     m=y*0.9144 #Aqui se efectua la conversion
     print("\nSu valor en metros es:",m)
 
 def Metro_Pulgada():
-  m=float(input("Ingrese su valor en metros:"))
+  m=(input("Ingrese su valor en metros:"))
+  lista_permitiday=["1","2","3","4","5","6","7","8","9","0",".","-"]
+  comprobar=0
+  comprobado="no"
+  while (comprobado== "no"):
+      if(m==""):
+              comprobar=0
+              print("")
+              print("Valor invalido")
+              m=(input("Ingrese su valor en metros:"))
+      elif(comprobar<len(m)):
+          while(comprobar<len(m)):
+              if(m[comprobar] in lista_permitiday):
+                  comprobar+=1
+              
+              else:
+                  comprobar=0
+                  print("")
+                  print("Valor invalido")
+                  m=(input("Ingrese su valor en metros:"))
+          if(not m==""):
+              comprobado="si"
+  m=float(m)
   print("")
   p=m*39.3701
   print("Su valor en pulgadas es: ", p)
   
 def Pulgada_Metro():
-  p=float(input("Ingrese su valor en pulgadas:"))
+  p=(input("Ingrese su valor en pulgadas:"))
+  lista_permitiday=["1","2","3","4","5","6","7","8","9","0",".","-"]
+  comprobar=0
+  comprobado="no"
+  while (comprobado== "no"):
+      if(p==""):
+              comprobar=0
+              print("")
+              print("Valor invalido")
+              p=float(input("Ingrese su valor en pulgadas:"))
+      elif(comprobar<len(p)):
+          while(comprobar<len(p)):
+              if(p[comprobar] in lista_permitiday):
+                  comprobar+=1
+              
+              else:
+                  comprobar=0
+                  print("")
+                  print("Valor invalido")
+                  p=float(input("Ingrese su valor en pulgadas:"))
+          if(not p==""):
+              comprobado="si"
+  p=float(p)
   print("")
   m=p*0.0254
   print("Su valor en metros es:",m)
@@ -114,12 +203,12 @@ def IMC():
                     print("")
                     print("Valor invalido")
                     x = (input("¿Cuanto pesas(Kg)?"))
-            if(not numero==""):
+            if(not x==""):
                 comprobado="si"
     x=float(x)
 
     y = (input("¿Cuanto mides(metros)?"))
-    lista_permitiday=["1","2","3","4","5","6","7","8","9","0","."]
+    lista_permitiday=["1","2","3","4","5","6","7","8","9","0",".","-"]
     comprobar=0
     comprobado="no"
     while (comprobado== "no"):
@@ -138,7 +227,7 @@ def IMC():
                     print("")
                     print("Valor invalido")
                     y = (input("¿Cuanto mides(metros)?"))
-            if(not numero==""):
+            if(not y==""):
                 comprobado="si"
     y=float(y)
     # aqui se efectua el calculo y te arroja el resultado
@@ -182,7 +271,6 @@ def Multiplicacion():
 
 def Modulo():
     x = (input("Escribe el numero que quieres dividir: "))
-    lista_permitiday=["1","2","3","4","5","6","7","8","9","0",".","-"]
     comprobar=0
     comprobado="no"
     while (comprobado== "no"):
@@ -201,7 +289,7 @@ def Modulo():
                     print("")
                     print("Valor invalido")
                     x = (input("Escribe el numero que quieres dividir: "))
-            if(not numero==""):
+            if(not x==""):
                 comprobado="si"
     x=float(x)
 
@@ -225,7 +313,7 @@ def Modulo():
                     print("")
                     print("Valor invalido")
                     y = (input("Escribe el numero por el que lo quieres dividir: "))
-            if(not numero==""):
+            if(not y==""):
                 comprobado="si"
     y=float(y)
 
@@ -259,7 +347,7 @@ def Potencia():
                     print("")
                     print("Valor invalido")
                     a = (input("Numero a elevar: "))
-            if(not numero==""):
+            if(not a==""):
                 comprobado="si"
     a=float(a)
 
@@ -284,7 +372,7 @@ def Potencia():
                     print("")
                     print("Valor invalido")
                     b = (input("Potencia:"))
-            if(not numero==""):
+            if(not b==""):
                 comprobado="si"
     b=float(b)
 
@@ -333,7 +421,7 @@ def Division():
                     print("")
                     print("Valor invalido")
                     x = (input("Escribe el numero que quieres dividir: "))
-            if(not numero==""):
+            if(not x==""):
                 comprobado="si"
     x=float(x)
     
@@ -357,7 +445,7 @@ def Division():
                     print("")
                     print("Valor invalido")
                     y = (input("Escribe el numero por el que lo quieres dividir "))
-            if(not numero==""):
+            if(not y==""):
                 comprobado="si"
     y=float(y)
     if (y == 0):
@@ -422,7 +510,7 @@ def Raiz():
                     print("")
                     print("Valor invalido")
                     a = (input("Numero a sacar raiz: "))
-            if(not numero==""):
+            if(not a==""):
                 comprobado="si"
     a=float(a)
 
@@ -446,7 +534,7 @@ def Raiz():
                     print("")
                     print("Valor invalido")
                     b = (input("Raiz: "))
-            if(not numero==""):
+            if(not b==""):
                 comprobado="si"
     b=float(b)
 
@@ -523,7 +611,7 @@ def Decimal_Binario():
                     print("")
                     print("Valor invalido")
                     decimal=(input("Ingreese el numero decimal:"))
-            if(not numero==""):
+            if(not decimal==""):
                 comprobado="si"
     decimal=int(decimal)
     while ((decimal // 2) != 0):
@@ -582,7 +670,7 @@ def Hexadecimal_Decimal():
                     while(contador>=0):
                         lista_hexa.append(hexa[contador])
                         contador-=1
-            if(not numero==""):
+            if(not hexa==""):
                 comprobado="si"
     
     
@@ -719,7 +807,7 @@ def Hexadecimal_Binario():
                     while(contador>=0):
                         lista_hexa.append(hexa[contador])
                         contador-=1
-            if(not numero==""):
+            if(not hexa==""):
                 comprobado="si"
     
     
@@ -775,8 +863,10 @@ def Menu():
         14.-Determinar si un numero es primo
         15.-IMC
         16.-Metro_Pulgada
-        17.Pulgada_Metro
-        18.Salir
+        17.-Pulgada_Metro
+        18.-Metros_Yardas
+        19.-Yardas_Metros
+        20.-Salir
         """)
         ans = (input("Que te gustaria hacer:"))
        
@@ -823,7 +913,7 @@ def Menu():
                 Yardas_Metro()
             elif ans==20:
                  print("salir gracias men")
-                break
+                 break
             time.sleep(3)
         elif(not ans in aceptable):
             print ("Ingreso un valor no valido")
@@ -833,4 +923,3 @@ def Menu():
 
                        
 Menu()
-
