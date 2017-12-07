@@ -9,9 +9,11 @@ def Metro_Yardas():
     comprobado="no"
     while (comprobado== "no"):
         if(m==""):
+                #se comprueba si el valor es calidos o no
                 comprobar=0
                 print("")
                 print("Valor invalido")
+                #si el valor es invalidos vuelve apreguntar el valor #se comprueba si el valor es calidos o no
                 m=(input("Cual sera su valor en metros:"))
         elif(comprobar<len(m)):
             while(comprobar<len(m)):
@@ -39,9 +41,11 @@ def Yardas_Metros ():
     comprobado="no"
     while (comprobado== "no"):
         if(y==""):
+                #se comprueba si el valor es calidos o no
                 comprobar=0
                 print("")
                 print("Valor invalido")
+                #si el valor es invalidos vuelve apreguntar el valor
                 y=float(input("Cual sera su valor en yardas:"))
         elif(comprobar<len(y)):
             while(comprobar<len(y)):
@@ -66,9 +70,11 @@ def Metro_Pulgada():
   comprobado="no"
   while (comprobado== "no"):
       if(m==""):
+              #se comprueba si el valor es calidos o no
               comprobar=0
               print("")
               print("Valor invalido")
+              #si el valor es invalidos vuelve apreguntar el valor
               m=(input("Ingrese su valor en metros:"))
       elif(comprobar<len(m)):
           while(comprobar<len(m)):
@@ -189,9 +195,11 @@ def IMC():
     comprobado="no"
     while (comprobado== "no"):
         if(x==""):
+                #se comprueba si el valor es calidos o no
                 comprobar=0
                 print("")
                 print("Valor invalido")
+                #si el valor es invalidos vuelve apreguntar el valor 
                 x = (input("¿Cuanto pesas(Kg)?"))
         elif(comprobar<len(x)):
             while(comprobar<len(x)):
@@ -213,9 +221,11 @@ def IMC():
     comprobado="no"
     while (comprobado== "no"):
         if(y==""):
+                #se comprueba si el valor es calidos o no
                 comprobar=0
                 print("")
                 print("Valor invalido")
+                #si el valor es invalidos vuelve apreguntar el valor
                 y = (input("¿Cuanto mides(metros)?"))
         elif(comprobar<len(y)):
             while(comprobar<len(y)):
@@ -245,9 +255,11 @@ def Multiplicacion():
         comprobado="no"
         while (comprobado== "no"):
             if(numero==""):
+                    #se comprueba si el valor es valido o no
                     comprobar=0
                     print("")
                     print("Valor invalido")
+                    #si el valor es invalidos vuelve apreguntar el valor
                     numero = (input("Numero:"))
             elif(comprobar<len(numero)):
                 while(comprobar<len(numero)):
@@ -299,9 +311,11 @@ def Modulo():
     comprobado="no"
     while (comprobado== "no"):
         if(y==""):
+                #se comprueba si el valor es valido o no
                 comprobar=0
                 print("")
                 print("Valor invalido")
+                #si el valor es invalidos vuelve apreguntar el valor
                 y = (input("Escribe el numero por el que lo quieres dividir: "))
         elif(comprobar<len(y)):
             while(comprobar<len(y)):
@@ -333,6 +347,7 @@ def Potencia():
     comprobado="no"
     while (comprobado== "no"):
         if(a==""):
+                #se comprueba si el valor es valido o no
                 comprobar=0
                 print("")
                 print("Valor invalido")
